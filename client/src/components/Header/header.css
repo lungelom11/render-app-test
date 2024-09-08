@@ -1,0 +1,15 @@
+.logo{
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1374f4;
+}
+
+.profile-img{
+    height: 60px;
+}
+
+.profile-img img{
+    height: 90%;
+    border-radius: 50%;
+}

@@ -1,0 +1,54 @@
+.sidebar {
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar ul li{
+    list-style-type: none;
+  }
+
+  .sidebar ul li a {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 0.8rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.1s ease;
+    border-radius: 3px;
+    color: #1374f4;
+  }
+  
+  .sidebar ul li a:hover {
+    background: #1374f4;
+    color: white;
+  }
+
+  .sidebar ul li a .icon {
+    font-size: 1.3rem;
+    width: 40px;
+    display: inline-block;
+  }
+  
+  .sidebar ul li a .item {
+    width: 170px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    transition: all 0.5s 0.1s ease;
+  }
+
+  
+  .active-page {
+    background-color: #1374f4;
+  }
+  
+  .active-page .item,
+  .active-page .icon {
+    color: whitesmoke;
+  }
+  
