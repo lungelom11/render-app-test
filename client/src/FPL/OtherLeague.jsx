@@ -11,21 +11,8 @@ import {
 } from '@chakra-ui/react';
 import './fpl.css';
 
-interface Team {
-  id: number;
-  player_name: string;
-  rank: number;
-  entry_name: string;
-  total: number;
-}
-
-interface OtherLeagueProps {
-  otherLeague: Team[];
-  isLoading: boolean;
-}
-
-const OtherLeague: React.FC<OtherLeagueProps> = ({ otherLeague, isLoading }) => {
-  const [myPoints, setMyPoints] = useState<number | undefined>();
+const OtherLeague = ({ otherLeague, isLoading }) => {
+  const [myPoints, setMyPoints] = useState();
 
   useEffect(() => {
     const myTeam = otherLeague.find((team) => team.id === 38457515);
